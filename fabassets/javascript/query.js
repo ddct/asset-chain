@@ -41,7 +41,8 @@ async function main() {
         // Evaluate the specified transaction.
         // queryAsset transaction - requires 1 argument, ex: ('queryAsset', 'CAR4')
         // queryAllAssets transaction - requires no arguments, ex: ('queryAllAssets')
-        const result = await contract.evaluateTransaction('queryAllAssets');
+
+        const result = await contract.submitTransaction('createAsset', 'ASSET1', 'Lenovo', 'IdeaPad', 'Black', 'JREES');
         console.log(`Transaction has been evaluated, result is: ${result.toString()}`);
 
     } catch (error) {
