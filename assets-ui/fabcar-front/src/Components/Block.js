@@ -42,9 +42,9 @@ function Block(props) {
             {props.block.channel_id}
           </Typography>
           <Typography variant="subheading" >
-            {/* {props.block.filtered_tx.length} Transaction(s): */}
+            {props.block.filtered_transactions.length} Transaction(s):
           </Typography>
-            {/* {props.block.filtered_tx.map((tx) => <Typography component="p" key={tx.txid}>- {tx.txid}</Typography>)} */}
+            {props.block.filtered_transactions.map((tx) => <Typography component="p" key={tx.txid}>- {tx.txid}</Typography>)}
         </CardContent>
       </Card>
     </div>
