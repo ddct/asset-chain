@@ -5,7 +5,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
-// import AssetIcon from '@material-ui/icons/DirectionsAsset';
+import Laptop from '@material-ui/icons/Laptop';
 import Logo from '../Components/Logo';
 
 const styles = theme => ({
@@ -17,13 +17,31 @@ const styles = theme => ({
   },
 });
 
+function getJSONData(props) {
+  return(
+    JSON.parse(props)
+  )
+}
+
 function FolderList(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
     { props.data.length > 0 ?
-      
-props.data
+      <List>
+          {
+           getJSONData(props.data).map((asset) => {
+              return(
+            <ListItem key={asset.Key}>
+                <Avatar>
+                  <Laptop />
+                </Avatar>
+                {asset.Record ? <ListItemText primary={asset.Key} secondary={`${asset.Record.owner}'s ${asset.Record.make} ${asset.Record.model} (${asset.Record.color})`} />
+                : <ListItemText primary={asset.Key} secondary={asset.Msg}/>
+                }
+            </ListItem>
+          )})}
+      </List>
     : <Logo />
     }
     </div>

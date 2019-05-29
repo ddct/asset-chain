@@ -6,11 +6,8 @@ export default class Header extends Component {
     return (
       
     <div className="Logo">
-        <Typography color="textSecondary">
-            Welcome to
-          </Typography>
         <Typography color="primary" variant="display3">
-            FabAsset
+            LegoBox
           </Typography>
         <br />
         <br />
