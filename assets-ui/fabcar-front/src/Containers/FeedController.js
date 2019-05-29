@@ -78,7 +78,6 @@ class FeedController extends Component {
     }
   }
 
-
   componentDidMount() {
     this.props.socket.on('queryResponse', (data) => {
       this.dataHandler(data);
@@ -92,11 +91,9 @@ class FeedController extends Component {
     this.props.socket.on('createResponse', (data) => {
       this.dataHandler(data);
       })
-
     this.props.socket.on('RESPONSE', (data) => {
       this.dataHandler(data);
       })
-    
   }
 
   render() {

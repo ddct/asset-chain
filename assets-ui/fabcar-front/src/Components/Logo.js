@@ -6,7 +6,7 @@ export default class Header extends Component {
     return (
       
     <div className="Logo">
-        <Typography color="primary" variant="display3">
+        <Typography color="primary" variant="display2">
             LegoBox
           </Typography>
         <br />
@@ -19,8 +19,8 @@ export default class Header extends Component {
         <br />
         <br />
         <Typography color="textSecondary">
-            Select an option to begin
-          </Typography>
+          Select an option to begin
+        </Typography>
     </div>
 
     );

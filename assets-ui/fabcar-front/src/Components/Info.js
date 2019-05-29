@@ -17,35 +17,57 @@ const styles = theme => ({
   },
 });
 
-function getJSONData(props) {
-  return(
-    JSON.parse(props)
-  )
-}
-
 function FolderList(props) {
   const { classes } = props;
-  return (
-    <div className={classes.root}>
-    { props.data.length > 0 ?
-      <List>
-          {
-           getJSONData(props.data).map((asset) => {
-              return(
-            <ListItem key={asset.Key}>
-                <Avatar>
-                  <Laptop />
-                </Avatar>
-                {asset.Record ? <ListItemText primary={asset.Key} secondary={`${asset.Record.owner}'s ${asset.Record.make} ${asset.Record.model} (${asset.Record.color})`} />
-                : <ListItemText primary={asset.Key} secondary={asset.Msg}/>
-                }
-            </ListItem>
-          )})}
-      </List>
-    : <Logo />
+  const dataSize = props.data.length;
+  console.log(dataSize)
+  
+    if(dataSize > 100) {
+      return(
+        <div className={classes.root}>
+              
+          <List>
+            {
+              JSON.parse(props.data).map((asset) => {
+                return(
+                <ListItem key={asset.Key}>
+                    <Avatar>
+                      <Laptop />
+                    </Avatar>
+                    {asset.Record ? <ListItemText primary={asset.Key} secondary={`${asset.Record.owner}'s ${asset.Record.make} ${asset.Record.model} (${asset.Record.color})`} />
+                    : <ListItemText primary={asset.Key} secondary={asset.Msg}/>
+                    }
+                </ListItem>
+                );
+              })
+            }
+          </List>
+          
+        </div>
+      );
+    
+    } else if (dataSize !== 0) {
+      
+        var asset = JSON.parse(props.data);
+
+      return(
+        <div className={classes.root}>
+          <List>
+                <ListItem>
+                    <Avatar>
+                      <Laptop />
+                    </Avatar>
+                    <ListItemText primary={asset.owner} secondary={`${asset.owner}'s ${asset.make} ${asset.model} (${asset.color})`} />
+                </ListItem>
+          </List>
+        </div>
+      );
     }
-    </div>
-  );
+
+    return(
+    <Logo />
+    );
+
 }
 
 FolderList.propTypes = {
