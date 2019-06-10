@@ -44,7 +44,7 @@ class Create extends React.Component {
         alert('ID MUST CONTAIN "ASSET" FOLLOWED BY ID BETWEEN 0 AND 999')
     } else {
       this.props.switchFeedHandler(1)
-      this.props.socket.emit('REQUEST', {action: "CREATE", data:this.state})
+      this.props.socket.emit('REQUEST', {action: "CREATE", data:this.state, owner:"user1"})
     }
   }
 
