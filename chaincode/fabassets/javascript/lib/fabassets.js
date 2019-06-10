@@ -85,7 +85,7 @@ class FabAssets extends Contract {
 
     async changeAssetOwner(ctx, assetNumber, newOwner) {
         console.info('============= START : changeAssetOwner ===========');
-
+        ctx.getCreator()
         const assetAsBytes = await ctx.stub.getState(assetNumber); // get the asset from chaincode state
         if (!assetAsBytes || assetAsBytes.length === 0) {
             throw new Error(`${assetNumber} does not exist`);
