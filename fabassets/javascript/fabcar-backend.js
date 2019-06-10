@@ -62,7 +62,7 @@ async function query(request, socket){
                  // additional data for response for query single
                 data = [{Key: request.args[0], 'Record': data}]  
             } 
-            console.log(`query completed, data: ${data}, called: ${request.NAME} ${request}`)
+            console.log(`query completed, data: ${data}, called:${request}`)
             socket.emit('RESPONSE', {type: 'INFO', payload: data });
         }
     } else {
@@ -291,7 +291,7 @@ io.on('connection', socket => {
                 break;
 
             case "QUERYALL":
-                socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY All received from: ${req.NAME}` });
+                socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY All received` });
                 query(
                         {
                             chaincodeId: 'fabassets',
