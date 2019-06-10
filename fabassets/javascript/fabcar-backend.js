@@ -46,6 +46,7 @@ async function assetExists(assetID, success, failure){
 
 // This method queries the peer to retrieve the information as defined in the request argument
 async function query(request, socket){
+    console.log(request)
     // sends a proposal to one or more endorsing peers that will be handled by the chaincode
     query_responses = await channel.queryByChaincode(request);
     socket.emit('RESPONSE', {type: 'FEED', payload: "Sending query to peers" });
@@ -61,7 +62,7 @@ async function query(request, socket){
                  // additional data for response for query single
                 data = [{Key: request.args[0], 'Record': data}]  
             } 
-            console.log(`query completed, data: ${data}`)
+            console.log(`query completed, data: ${data}, called: ${request.NAME} ${request}`)
             socket.emit('RESPONSE', {type: 'INFO', payload: data });
         }
     } else {
@@ -219,7 +220,7 @@ async function invoke(request, socket){
 async function getUser(socket, user) {
 
     // obtains an instance of the KeyValueStore class
-    const state_store = await Fabric_Client.newDefaultKeyValueStore({ path: store_path})
+    const state_store = await Fabric_Client.newDefaultKeyValueStore({ path: "wallet/"+user})
     socket.emit('RESPONSE' , {type: 'FEED' , payload: "Getting key-value store from local server storage"});
 
     // assign the store to the fabric client
@@ -268,12 +269,14 @@ io.on('connection', socket => {
     socket.emit('RESPONSE', {type: 'FEED',  payload: `Connected to server with socket ID ${socket.id}` });
 
     // enroll user when client connects, default user is user1
-    let user = getUser(socket, 'user1');    
+    
 
     socket.on('REQUEST', (req) => {
+	let user = getUser(socket, req.owner)
         switch (req.action)
         {
             case "QUERY":
+		console.log(req)
                 socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY for ${req.data.ID} received` });
                 assetExists(req.data.ID, 
                             () =>  {query({
@@ -288,7 +291,7 @@ io.on('connection', socket => {
                 break;
 
             case "QUERYALL":
-                socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY All received` });
+                socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY All received from: ${req.NAME}` });
                 query(
                         {
                             chaincodeId: 'fabassets',
