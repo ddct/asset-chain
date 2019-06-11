@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cfcbae57-0f5d-4b47-8ead-ecef37601a80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +36,7 @@
           <entry key="md" value="4" />
           <entry key="sh" value="1" />
           <entry key="ts" value="1" />
-          <entry key="user1" value="1" />
+          <entry key="user1" value="2" />
           <entry key="yaml" value="2" />
           <entry key="yml" value="2" />
         </counts>
@@ -49,7 +47,7 @@
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="23" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="TypeScript" value="1" />
           <entry key="YAML" value="4" />
         </counts>
@@ -57,14 +55,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="7521caaea5a925880da1e66f31c007e29edeb1b2d5bd598264cee00670dbc2d3-priv" value="1" />
-          <entry key="js" value="270" />
+          <entry key="js" value="501" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="270" />
+          <entry key="JavaScript" value="501" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -89,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="45" column="79" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="79" />
+            <state relative-caret-position="388">
+              <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -128,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+            <state relative-caret-position="383">
+              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -152,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
+            <state relative-caret-position="62">
+              <caret line="38" column="76" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -161,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="284" column="55" lean-forward="true" selection-start-line="284" selection-start-column="55" selection-end-line="284" selection-end-column="55" />
+            <state relative-caret-position="518">
+              <caret line="326" column="47" lean-forward="true" selection-start-line="326" selection-start-column="47" selection-end-line="326" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -195,6 +193,7 @@
       <find>getUser</find>
       <find>getClientCertHash</find>
       <find>getU</find>
+      <find>transfer</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/fabassets/javascript</dir>
@@ -220,12 +219,12 @@
         <option value="$PROJECT_DIR$/fabassets/javascript/package.json" />
         <option value="$PROJECT_DIR$/fabassets/javascript/wallet/user1/7521caaea5a925880da1e66f31c007e29edeb1b2d5bd598264cee00670dbc2d3-priv" />
         <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js" />
-        <option value="$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js" />
-        <option value="$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js" />
         <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" />
         <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" />
         <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" />
         <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" />
+        <option value="$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js" />
+        <option value="$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js" />
       </list>
     </option>
   </component>
@@ -249,7 +248,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="952" />
+    <option name="height" value="944" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -326,6 +325,21 @@
               <item name="fabassets" type="462c0819:PsiDirectoryNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet" type="462c0819:PsiDirectoryNode" />
+              <item name="user1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -336,7 +350,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560172064394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560260473652" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -418,17 +432,49 @@
       <option name="presentableId" value="Default" />
       <updated>1559070977553</updated>
       <workItem from="1559070979036" duration="30797000" />
-      <workItem from="1560172307059" duration="3180000" />
+      <workItem from="1560172307059" duration="6662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33977000" />
+    <option name="totallyTimeSpent" value="37459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="952" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="947" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24969475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32906976" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Problems" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -459,7 +505,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -555,9 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fabassets/javascript/wallet/user1/user1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -608,33 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="284" column="55" lean-forward="true" selection-start-line="284" selection-start-column="55" selection-end-line="284" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fabassets/javascript/registerUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -655,16 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -677,11 +683,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="45" column="79" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="79" />
+        <state relative-caret-position="388">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="38" column="76" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabassets/javascript/wallet/user1/user1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="209" selection-start-column="198" selection-end-column="209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="326" column="47" lean-forward="true" selection-start-line="326" selection-start-column="47" selection-end-line="326" selection-end-column="47" />
         </state>
       </provider>
     </entry>

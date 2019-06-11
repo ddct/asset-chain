@@ -272,10 +272,11 @@ io.on('connection', socket => {
 
     socket.on('REQUEST', (req) => {
 	let user = getUser(socket, req.owner)
+        console.log(req)
         switch (req.action)
         {
             case "QUERY":
-		console.log(req)
+
                 socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY for ${req.data.ID} received` });
                 assetExists(req.data.ID, 
                             () =>  {query({
@@ -306,7 +307,7 @@ io.on('connection', socket => {
                                 {
                                     chaincodeId: 'fabassets',
                                     fcn: 'changeAssetOwner',
-                                    args: [req.data.ID , req.data.newOwner],
+                                    args: [req.data.ID , req.data.newOwner, req.owner],
                                     chainId: 'mychannel'
                                 }
                             , socket)},
