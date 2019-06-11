@@ -15,7 +15,6 @@ const peer = fabric_client.newPeer('grpc://localhost:7051');
 channel.addPeer(peer);
 const order = fabric_client.newOrderer('grpc://localhost:7050')
 channel.addOrderer(order);
-const store_path = path.join(__dirname, 'wallet/user1');
 
 // Express stuff
 const port = 4001
@@ -233,7 +232,7 @@ async function getUser(socket, user) {
 
     // use the same location for the state store (where the users' certificate are kept)
     // and the crypto store (where the users' keys are kept)
-    const crypto_store = Fabric_Client.newCryptoKeyStore({path: store_path});
+    const crypto_store = Fabric_Client.newCryptoKeyStore({path: "wallet/"+user});
     crypto_suite.setCryptoKeyStore(crypto_store);
     fabric_client.setCryptoSuite(crypto_suite);
     socket.emit('RESPONSE' , {type: 'FEED' , payload: "Setting up crypto suite"});

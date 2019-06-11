@@ -41,7 +41,7 @@ class QueryAll extends React.Component {
       <br/>
         <Button variant="contained" color="primary" className={classes.button} disabled={!this.props.connected} onClick={ () => {
             this.props.switchFeedHandler(1)
-            this.props.socket.emit('REQUEST', {action: "QUERYALL", owner: "user1"})
+            this.props.socket.emit('REQUEST', {action: "QUERYALL", owner: "dave"})
             }}>
             {this.props.connected ? "SEARCH All" : "DISCONNECTED"}
         </Button>
