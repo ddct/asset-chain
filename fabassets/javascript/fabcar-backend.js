@@ -15,7 +15,6 @@ const peer = fabric_client.newPeer('grpc://localhost:7051');
 channel.addPeer(peer);
 const order = fabric_client.newOrderer('grpc://localhost:7050')
 channel.addOrderer(order);
-const store_path = path.join(__dirname, 'wallet/user1');
 
 // Express stuff
 const port = 4001
@@ -46,6 +45,7 @@ async function assetExists(assetID, success, failure){
 
 // This method queries the peer to retrieve the information as defined in the request argument
 async function query(request, socket){
+    console.log(request)
     // sends a proposal to one or more endorsing peers that will be handled by the chaincode
     query_responses = await channel.queryByChaincode(request);
     socket.emit('RESPONSE', {type: 'FEED', payload: "Sending query to peers" });
@@ -61,7 +61,7 @@ async function query(request, socket){
                  // additional data for response for query single
                 data = [{Key: request.args[0], 'Record': data}]  
             } 
-            console.log(`query completed, data: ${data}`)
+            console.log(`query completed, data: ${data}, called:${request}`)
             socket.emit('RESPONSE', {type: 'INFO', payload: data });
         }
     } else {
@@ -219,7 +219,7 @@ async function invoke(request, socket){
 async function getUser(socket, user) {
 
     // obtains an instance of the KeyValueStore class
-    const state_store = await Fabric_Client.newDefaultKeyValueStore({ path: store_path})
+    const state_store = await Fabric_Client.newDefaultKeyValueStore({ path: "wallet/"+user})
     socket.emit('RESPONSE' , {type: 'FEED' , payload: "Getting key-value store from local server storage"});
 
     // assign the store to the fabric client
@@ -232,7 +232,7 @@ async function getUser(socket, user) {
 
     // use the same location for the state store (where the users' certificate are kept)
     // and the crypto store (where the users' keys are kept)
-    const crypto_store = Fabric_Client.newCryptoKeyStore({path: store_path});
+    const crypto_store = Fabric_Client.newCryptoKeyStore({path: "wallet/"+user});
     crypto_suite.setCryptoKeyStore(crypto_store);
     fabric_client.setCryptoSuite(crypto_suite);
     socket.emit('RESPONSE' , {type: 'FEED' , payload: "Setting up crypto suite"});
@@ -268,12 +268,15 @@ io.on('connection', socket => {
     socket.emit('RESPONSE', {type: 'FEED',  payload: `Connected to server with socket ID ${socket.id}` });
 
     // enroll user when client connects, default user is user1
-    let user = getUser(socket, 'user1');    
+    
 
     socket.on('REQUEST', (req) => {
+	let user = getUser(socket, req.owner)
+        console.log(req)
         switch (req.action)
         {
             case "QUERY":
+
                 socket.emit('RESPONSE', {type: 'START', payload: `Request for QUERY for ${req.data.ID} received` });
                 assetExists(req.data.ID, 
                             () =>  {query({
@@ -304,7 +307,7 @@ io.on('connection', socket => {
                                 {
                                     chaincodeId: 'fabassets',
                                     fcn: 'changeAssetOwner',
-                                    args: [req.data.ID , req.data.newOwner],
+                                    args: [req.data.ID , req.data.newOwner, req.owner],
                                     chainId: 'mychannel'
                                 }
                             , socket)},

@@ -12,11 +12,11 @@ import socketIOClient from 'socket.io-client'
 class App extends Component {
 
   constructor() {
-    super()  
+    super()
     this.state = {
       showFeed: false,
       connected: false,
-      socket : socketIOClient("http://localhost:4001"),
+      socket : socketIOClient("40.117.233.118:4001"),
       blocks : [],
     }  
 

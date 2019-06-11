@@ -6,6 +6,7 @@
 
 const { Contract } = require('fabric-contract-api');
 
+
 class FabAssets extends Contract {
 
     async initLedger(ctx) {
@@ -83,17 +84,23 @@ class FabAssets extends Contract {
         }
     }
 
-    async changeAssetOwner(ctx, assetNumber, newOwner) {
+    async changeAssetOwner(ctx, assetNumber, newOwner, currentOwner) {
         console.info('============= START : changeAssetOwner ===========');
 
         const assetAsBytes = await ctx.stub.getState(assetNumber); // get the asset from chaincode state
+        //Validate the asset exists
         if (!assetAsBytes || assetAsBytes.length === 0) {
             throw new Error(`${assetNumber} does not exist`);
         }
-        const asset = JSON.parse(assetAsBytes.toString());
-        asset.owner = newOwner;
+        // Validate current owner
+        if (assetAsBytes.owner !== currentOwner) {
+            throw new Error('Asset ' + assetNumber + ' is not owned by ' + currentOwner);
+        }
 
-        await ctx.stub.putState(assetNumber, Buffer.from(JSON.stringify(asset)));
+
+        const assetJson = JSON.parse(assetAsBytes.toString());
+
+        await ctx.stub.putState(assetNumber, Buffer.from(JSON.stringify(assetJson)));
         console.info('============= END : changeAssetOwner ===========');
     }
 
