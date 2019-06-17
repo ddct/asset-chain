@@ -93,6 +93,7 @@ async function invoke(request, socket){
     socket.emit('RESPONSE',{type: 'FEED' , payload: `Sending transaction proposal to peers`})
 
     const proposalResponses = results[0];
+
     const proposal = results[1];
     let isProposalGood = false;
 
