@@ -15,37 +15,36 @@
   margin-top: 15px;
 }
 
+.Banner-container{
+  height: 60px;
+  width: 100%;
+  padding: 20px 10px 12px 10px;
+  background-color:white;
+  text-align: left;
+  border-bottom: 3px solid #ccc;
+}
+
 .Main-container{
   box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 65%;
+  height: 320px;
   width: 66%;
   padding:  10px 10px 10px 5px;
   background: lightgrey;
+  float:right;
 }
-
 
 .Feed-container{
   box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 65%;
+  height:320px;
   width: 34%;
   padding: 10px 5px 10px 10px;
   background: lightgrey;
+  overflow:scroll;
 }
 
-
 .Blocks-container{
-  position: fixed;
   box-sizing: border-box;
-  bottom: 0;
-  left:0;
-  right:0;
-  height: 35%;
+  height: 600px;
   padding: 10px;
   background: lightgrey;
 }
@@ -74,10 +73,6 @@
   right: 0;
 }
 
-.Info-container {
-  text-align: center;
-}
-
 .Logo {
   text-align: center;
   text-transform: uppercase;
@@ -86,4 +81,9 @@
 
 .error {
   color: red;
+}
+
+#lego {
+  margin-left: 20px;
+  margin-top: 0px;
 }

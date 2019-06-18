@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
-
 import FeedNav from './FeedNav';
 import Info from '../Components/Info';
 import FeedList from '../Components/FeedList';
 import { Divider } from '@material-ui/core';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-
-
 
 class FeedController extends Component {
 
@@ -74,7 +71,6 @@ class FeedController extends Component {
       this.setState({
       feed : newFeed
       })
-
     }
   }
 
@@ -107,5 +103,3 @@ class FeedController extends Component {
 }
 
 export default FeedController;
-
-

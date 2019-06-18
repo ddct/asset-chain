@@ -5,9 +5,8 @@ import Main from './Containers/Main';
 import Connected from './Containers/Connected';
 import FeedController from './Containers/FeedController';
 import Blocks from './Components/Blocks';
-
+import Banner from './Containers/Banner';
 import socketIOClient from 'socket.io-client'
-
 
 class App extends Component {
 
@@ -66,6 +65,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="Banner-container">
+          <Banner />
+        </div>
         <div className="Main-container">
           <Main socket={this.state.socket} switchFeedHandler={this.switchFeedHandler} connected={this.state.connected}/>
         </div>

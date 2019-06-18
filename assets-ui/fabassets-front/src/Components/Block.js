@@ -10,7 +10,7 @@ const styles = {
     minWidth: 100,
     height: 235,
     wordWrap: "break-word",
-    overflow: 'scroll',
+    overflow: 'hidden',
   },
   bullet: {
     display: 'inline-block',
