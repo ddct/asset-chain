@@ -101,10 +101,12 @@ class FabAssets extends Contract {
         }
 
 
+        asset.owner = newOwner;
 
         await ctx.stub.putState(assetNumber, Buffer.from(JSON.stringify(assetJson)));
         console.info('============= END : changeAssetOwner ===========');
     }
+
 
 }
 
