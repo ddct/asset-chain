@@ -89,16 +89,18 @@ class FabAssets extends Contract {
 
         const assetAsBytes = await ctx.stub.getState(assetNumber); // get the asset from chaincode state
         //Validate the asset exists
+
+        const assetJson = JSON.parse(assetAsBytes.toString());
+
         if (!assetAsBytes || assetAsBytes.length === 0) {
             throw new Error(`${assetNumber} does not exist`);
         }
         // Validate current owner
-        if (assetAsBytes.owner !== currentOwner) {
+        if (assetJson.owner !== currentOwner) {
             throw new Error('Asset ' + assetNumber + ' is not owned by ' + currentOwner);
         }
 
 
-        const assetJson = JSON.parse(assetAsBytes.toString());
 
         await ctx.stub.putState(assetNumber, Buffer.from(JSON.stringify(assetJson)));
         console.info('============= END : changeAssetOwner ===========');
