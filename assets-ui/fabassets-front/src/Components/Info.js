@@ -12,7 +12,7 @@ const styles = theme => ({
   root: {
     position: 'relative',
     overflow: 'auto',
-    maxHeight: '85%',
+    maxHeight: '80%',
     backgroundColor: theme.palette.background.paper,
   },
 });
@@ -20,7 +20,6 @@ const styles = theme => ({
 function FolderList(props) {
   const { classes } = props;
   const dataSize = props.data.length;
-  console.log(dataSize)
   
     if(dataSize > 100) {
       return(

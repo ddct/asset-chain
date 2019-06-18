@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
-import Logo from '../Components/Logo';
 
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     position: 'relative',
     overflow: 'auto',
-    maxHeight: '85%',
+    maxHeight: '75%',
   },
 });
 
@@ -21,7 +20,7 @@ function PinnedSubheaderList(props) {
     <List className={classes.root} >
       {props.data}
     </List>
-    : <Logo />
+    : <span></span>
   )
 }
 
