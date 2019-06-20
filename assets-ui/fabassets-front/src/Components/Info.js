@@ -20,16 +20,20 @@ const styles = theme => ({
 function FolderList(props) {
   const { classes } = props;
   const dataSize = props.data.length;
-  
+
+
     if(dataSize > 100) {
+        let sorted = JSON.parse(props.data).sort(function(a,b){
+            return parseInt(a.Key.substr(5)) - parseInt(b.Key.substr(5))
+        });
       return(
         <div className={classes.root}>
-              
+
           <List>
             {
-              JSON.parse(props.data).map((asset) => {
+              sorted.map((asset) => {
                 return(
-                <ListItem key={asset.Key}>
+                <ListItem key={parseInt(asset.Key.substr(5))}>
                     <Avatar>
                       <Laptop />
                     </Avatar>
@@ -41,12 +45,12 @@ function FolderList(props) {
               })
             }
           </List>
-          
+
         </div>
       );
-    
+
     } else if (dataSize !== 0) {
-      
+
         var asset = JSON.parse(props.data);
 
       return(
