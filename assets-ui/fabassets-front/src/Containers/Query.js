@@ -43,7 +43,7 @@ class Query extends React.Component {
     } else {
     //Switch to feed
     this.props.switchFeedHandler(1)
-    this.socket.emit('REQUEST', {action: "QUERY", data:this.state, owner: "thomas"})
+    this.socket.emit('REQUEST', {action: "QUERY", data:this.state, owner: this.props.owner})
     }
   }
 

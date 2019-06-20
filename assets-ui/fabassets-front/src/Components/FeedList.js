@@ -8,7 +8,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper,
     position: 'relative',
     overflow: 'auto',
-    maxHeight: '85%',
+    maxHeight: '75%',
   },
 });
 
