@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfcbae57-0f5d-4b47-8ead-ecef37601a80" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.css" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/ChangeUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/MainNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" afterDir="false" />
+>>>>>>> Set user
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +40,13 @@
           <entry key="7521caaea5a925880da1e66f31c007e29edeb1b2d5bd598264cee00670dbc2d3-priv" value="4" />
           <entry key="7521caaea5a925880da1e66f31c007e29edeb1b2d5bd598264cee00670dbc2d3-pub" value="1" />
           <entry key="block" value="1" />
+          <entry key="css" value="1" />
           <entry key="editorconfig" value="1" />
-          <entry key="js" value="23" />
+          <entry key="js" value="33" />
           <entry key="json" value="2" />
           <entry key="md" value="5" />
           <entry key="sh" value="2" />
-          <entry key="ts" value="1" />
+          <entry key="ts" value="2" />
           <entry key="user1" value="2" />
           <entry key="yaml" value="2" />
           <entry key="yml" value="2" />
@@ -42,26 +55,30 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="2" />
+          <entry key="CSS" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="23" />
+          <entry key="JavaScript" value="33" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="TypeScript" value="1" />
+          <entry key="TypeScript" value="2" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="7521caaea5a925880da1e66f31c007e29edeb1b2d5bd598264cee00670dbc2d3-priv" value="1" />
-          <entry key="js" value="536" />
+          <entry key="css" value="1" />
+          <entry key="js" value="1425" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="536" />
+          <entry key="JavaScript" value="1424" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -76,8 +93,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="187">
               <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+=======
+            <state relative-caret-position="254">
+              <caret line="80" column="66" lean-forward="true" selection-start-line="80" selection-start-column="66" selection-end-line="80" selection-end-column="66" />
+>>>>>>> Set user
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -88,13 +110,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Info.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="105">
               <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+=======
+            <state relative-caret-position="322">
+              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+>>>>>>> Set user
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="117">
@@ -102,24 +133,48 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Info.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+>>>>>>> Set user
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-346">
               <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+=======
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/ChangeUser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+>>>>>>> Set user
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
               <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+>>>>>>> Set user
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -128,13 +183,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
               <caret line="34" column="93" selection-start-line="34" selection-start-column="93" selection-end-line="34" selection-end-column="93" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+>>>>>>> Set user
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Block.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+=======
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+>>>>>>> Set user
             </state>
           </provider>
         </entry>
@@ -142,29 +225,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Block.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js">
-          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="254">
               <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="291">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+>>>>>>> Set user
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/MainNav.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="513">
               <caret line="92" column="12" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
+=======
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="41" column="119" selection-start-line="41" selection-start-column="112" selection-end-line="41" selection-end-column="119" />
+>>>>>>> Set user
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -172,11 +258,22 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
               <caret line="325" column="67" selection-start-line="325" selection-start-column="67" selection-end-line="325" selection-end-column="67" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/MainNav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+>>>>>>> Set user
             </state>
           </provider>
         </entry>
@@ -209,6 +306,11 @@
       <find>dave</find>
       <find>transfer</find>
       <find>getU</find>
+      <find>query all</find>
+      <find>query</find>
+      <find>create</find>
+      <find>connected</find>
+      <find>Main</find>
     </findStrings>
     <replaceStrings>
       <replace>james</replace>
@@ -236,14 +338,17 @@
       <list>
         <option value="$PROJECT_DIR$/fabassets/javascript/package.json" />
         <option value="$PROJECT_DIR$/fabassets/javascript/wallet/user1/7521caaea5a925880da1e66f31c007e29edeb1b2d5bd598264cee00670dbc2d3-priv" />
-        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js" />
-        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" />
-        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" />
-        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" />
-        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" />
         <option value="$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js" />
         <option value="$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js" />
         <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.css" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/MainNav.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/ChangeUser.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Main.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js" />
+        <option value="$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js" />
       </list>
     </option>
   </component>
@@ -313,6 +418,56 @@
               <item name="assets-ui" type="462c0819:PsiDirectoryNode" />
               <item name="fabassets-front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="assets-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="assets-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asset-chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asset-chain" type="462c0819:PsiDirectoryNode" />
+              <item name="fabassets" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Set user
             </path>
           </expand>
           <select />
@@ -324,7 +479,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561022275659" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561019548116" />
+>>>>>>> Set user
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -411,7 +570,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="46548000" />
+=======
+    <option name="totallyTimeSpent" value="51815000" />
+>>>>>>> Set user
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="944" extended-state="6" />
@@ -543,11 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/registerServiceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1319" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -573,6 +731,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Block.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -580,6 +739,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Set user
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -623,27 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="300" column="21" selection-start-line="300" selection-start-column="21" selection-end-line="300" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fabassets/javascript/wallet/user1/user1">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="209" selection-start-column="198" selection-end-column="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -659,18 +803,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fabassets/startFabric.sh">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="254">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+=======
         <state relative-caret-position="441">
           <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="43" column="63" lean-forward="true" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,30 +822,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fabassets/javascript/fabcar-backend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
+        <state relative-caret-position="741">
           <caret line="181" column="45" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
+>>>>>>> Set user
           <folding>
             <element signature="e#4338#8251#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js">
+    <entry file="file://$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="117">
+          <caret line="43" column="63" lean-forward="true" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+=======
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+>>>>>>> Set user
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="307" column="17" selection-start-line="307" selection-start-column="17" selection-end-line="307" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Components/Info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/MainNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="80" column="66" lean-forward="true" selection-start-line="80" selection-start-column="66" selection-end-line="80" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/ChangeUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="187">
           <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+=======
+        <state relative-caret-position="225">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+>>>>>>> Set user
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -716,20 +940,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Transfer.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="111">
           <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+=======
+        <state relative-caret-position="251">
+          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+>>>>>>> Set user
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chaincode/fabassets/javascript/lib/fabassets.js">
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/QueryAll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+        <state relative-caret-position="239">
+          <caret line="41" column="119" selection-start-line="41" selection-start-column="112" selection-end-line="41" selection-end-column="119" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets-ui/fabassets-front/src/Containers/Create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
