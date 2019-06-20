@@ -51,7 +51,7 @@ function FolderList(props) {
 
     } else if (dataSize !== 0) {
 
-        var asset = JSON.parse(props.x);
+        var asset = JSON.parse(props.data);
 
       return(
         <div className={classes.root}>
