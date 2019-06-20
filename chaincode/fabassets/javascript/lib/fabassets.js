@@ -84,20 +84,29 @@ class FabAssets extends Contract {
         }
     }
 
-    async changeAssetOwner(ctx, assetNumber, newOwner) {
+
+    async changeAssetOwner(ctx, assetNumber, newOwner, currentOwner) {
         console.info('============= START : changeAssetOwner ===========');
-        ctx.getCreator()
+
         const assetAsBytes = await ctx.stub.getState(assetNumber); // get the asset from chaincode state
+        //Validate the asset exists
+
+        const assetJson = JSON.parse(assetAsBytes.toString());
+
         if (!assetAsBytes || assetAsBytes.length === 0) {
             throw new Error(`${assetNumber} does not exist`);
         }
-        const asset = JSON.parse(assetAsBytes.toString());
-        asset.owner = newOwner;
+        // Validate current owner
+        if (assetJson.owner !== currentOwner) {
+            throw new Error('Asset ' + assetNumber + ' is not owned by ' + currentOwner);
+        }
 
-        await ctx.stub.putState(assetNumber, Buffer.from(JSON.stringify(asset)));
+
+        assetJson.owner = newOwner;
+
+        await ctx.stub.putState(assetNumber, Buffer.from(JSON.stringify(assetJson)));
         console.info('============= END : changeAssetOwner ===========');
     }
-
 }
 
 module.exports = FabAssets;

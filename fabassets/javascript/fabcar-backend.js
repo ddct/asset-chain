@@ -104,7 +104,7 @@ async function invoke(request, socket){
             console.log('Transaction proposal was good');
         } else {
             socket.emit('RESPONSE',{type: 'ERROR' , payload: `Transaction proposal was bad`})
-            console.error('Transaction proposal was bad');
+            console.error('Transaction proposal was bad: '+proposalResponses.response.message);
         }
     if (isProposalGood) {
         const msg = (util.format(
