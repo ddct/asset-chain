@@ -86,3 +86,71 @@
   margin-left: 20px;
   margin-top: 0px;
 }
+
+@media all and (max-width: 700px) {
+  .Main-container{
+    box-sizing: border-box;
+    height: 380px;
+    width: 100%;
+    padding:  10px 10px 10px 5px;
+    background: lightgrey;
+    float:right;
+  }
+
+  .Feed-container{
+    box-sizing: border-box;
+    height:380px;
+    width: 100%;
+    clear:both;
+    padding: 10px 5px 10px 10px;
+    background: lightgrey;
+  }
+
+  .Blocks-container{
+    box-sizing: border-box;
+    height: 600px;
+    width:100%;
+    padding: 10px;
+    background: lightgrey;
+    clear:both;
+  }
+
+  #root > div > div.Main-container > div > form > h1{
+    font-size:20px;
+  }
+
+  #root > div > div.Main-container > div > div.Main-inside > h1{
+    font-size:20px;
+  }
+
+  
+
+  #root > div > div.Main-container > div > div > div > div > div > div > button{
+    width:20%;
+    padding:0px;
+    margin-right:0px;
+  }
+
+  #root > div > div.Main-container > div > div > div > div > div > div {
+    justify-content: left;
+  }
+  #root > div > div.Main-container > div > div > div > div > div > div > button > span.MuiTab-wrapper-52 > span > span{
+    font-size:10px;
+  }
+
+
+
+  #root > div > div.Blocks-container > div > ul > li{
+    width: 100% !important;
+    overflow:scroll;
+  }
+
+  #root > div > div.Main-container{
+    height: auto;
+  }
+}
+
+#root > div > div.Blocks-container > div > ul > li > div > div > div{
+  overflow:scroll;
+}
+

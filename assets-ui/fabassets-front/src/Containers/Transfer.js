@@ -36,7 +36,7 @@ class Transfer extends React.Component {
       alert('All fields must be filled in');
     } else {
       this.props.switchFeedHandler(1)
-      this.props.socket.emit('REQUEST', {action: "TRANSFER", data:this.state, owner: "thomas"})
+      this.props.socket.emit('REQUEST', {action: "TRANSFER", data:this.state, owner: this.props.owner})
     }
   }
 

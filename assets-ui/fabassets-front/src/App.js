@@ -17,15 +17,24 @@ class App extends Component {
       connected: false,
       socket : socketIOClient("40.117.233.118:4001"),
       blocks : [],
+      owner: "thomas",
     }  
 
     this.switchFeedHandler = this.switchFeedHandler.bind(this);
+    this.updateOwner = this.updateOwner.bind(this);
   }
 
   switchFeedHandler(val) {
     this.setState({
       ...this.state,
       showFeed : (val === 0)
+    })
+  }
+
+  updateOwner(val) {
+    this.setState({
+        ...this.state,
+        owner: val
     })
   }
 
@@ -69,7 +78,7 @@ class App extends Component {
           <Banner />
         </div>
         <div className="Main-container">
-          <Main socket={this.state.socket} switchFeedHandler={this.switchFeedHandler} connected={this.state.connected}/>
+          <Main socket={this.state.socket} switchFeedHandler={this.switchFeedHandler} connected={this.state.connected} owner={this.state.owner} updateOwner={this.updateOwner}/>
         </div>
         <div className="Feed-container">
           <Paper classes={{root: "Page-container"}}>
