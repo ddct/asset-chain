@@ -6,6 +6,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import Laptop from '@material-ui/icons/Laptop';
+import VR from '@material-ui/icons/Visibility';
 import Logo from '../Components/Logo';
 
 const styles = theme => ({
@@ -33,11 +34,12 @@ function FolderList(props) {
             {
               sorted.map((asset) => {
                 return(
+                  
                 <div style={{display:'inline-block'}} className={'Asset'}>
                   <div style={{float:'left'}}>
-                    <Avatar>
-                      <Laptop />
-                    </Avatar>
+                  {asset.Record.make === "Oculus" ? 
+                    <Avatar><VR /></Avatar> : <Avatar><Laptop /></Avatar>
+                  }
                   </div>
                   <div className={'AssetText'}>
                     {asset.Record ? 
