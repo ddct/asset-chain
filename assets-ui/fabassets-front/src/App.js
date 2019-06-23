@@ -7,6 +7,7 @@ import FeedController from './Containers/FeedController';
 import Blocks from './Components/Blocks';
 import Banner from './Containers/Banner';
 import socketIOClient from 'socket.io-client'
+import AssetsController from './Containers/Assets';
 
 class App extends Component {
 
@@ -77,6 +78,8 @@ class App extends Component {
         <div className="Banner-container">
           <Banner />
         </div>
+            <AssetsController switchFeedHandler={this.switchFeedHandler}   socket={this.state.socket}/>
+
         <div className="Main-container">
           <Main socket={this.state.socket} switchFeedHandler={this.switchFeedHandler} connected={this.state.connected} owner={this.state.owner} updateOwner={this.updateOwner}/>
         </div>

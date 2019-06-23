@@ -58,7 +58,7 @@ class CustomizedTabs extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Tabs
+        {/* <Tabs
           value={(this.props.value ? 0 : 1)}
           onChange={(e,v) => {this.props.switchFeedHandler(v)}}
           classes={{ root: classes.tabsRoot, indicator: classes.tabsIndicator }}
@@ -72,7 +72,7 @@ class CustomizedTabs extends React.Component {
             classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
             label="Feed"
           />
-        </Tabs>
+        </Tabs> */}
       </div>
     );
   }

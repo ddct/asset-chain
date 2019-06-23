@@ -31,7 +31,7 @@ class FeedController extends Component {
       })
     }else if(data.type === 'INFO'){
       const newFeed = [<Divider key={data.payload}/>, ...this.state.feed]
-      this.props.switchFeedHandler(0);
+      this.props.switchFeedHandler(1);
       this.setState({
         feed : newFeed,
         info: data.payload

@@ -15,6 +15,31 @@
   margin-top: 15px;
 }
 
+.Assets-container{
+  height: auto;
+  width: calc(100% - 30px);
+  padding: 20px 0px 12px 10px;
+  margin:10px;
+  background-color: lightgrey;
+  text-align: left;
+}
+
+.Asset{
+  margin:10px;
+  border: 1px solid #ccc;
+  padding:10px;
+  border-radius:10px;
+}
+
+.AssetText{
+  float:left;
+  margin-left:10px;
+}
+
+.App {
+  background-color: lightgrey;
+}
+
 .Banner-container{
   height: 60px;
   width: calc(100% - 10px);
