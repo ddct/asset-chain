@@ -38,7 +38,10 @@ class Main extends Component {
               {this.state.page === 4 ? <ChangeUser switchFeedHandler={this.props.switchFeedHandler} owner={this.props.owner} updateOwner={this.props.updateOwner}/> : null}
           </ Paper>
     );
+    
+  
   }
+
 }
 
 export default Main;

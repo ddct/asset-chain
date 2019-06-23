@@ -51,5 +51,4 @@ class QueryAll extends React.Component {
   }
 }
 
-
 export default withStyles(styles)(QueryAll);

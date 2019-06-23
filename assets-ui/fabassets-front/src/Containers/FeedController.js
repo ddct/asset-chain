@@ -96,7 +96,7 @@ class FeedController extends Component {
     return (
           <Paper classes={{root: "Page-container"}}>
             <FeedNav switchFeedHandler={this.props.switchFeedHandler} value={this.props.showFeed}/>
-            {(this.props.showFeed ? <Info data={this.state.info}/> : <FeedList data={this.state.feed}/> )}
+            {(this.props.showFeed ? <Info data={this.state.feed}/> : <FeedList data={this.state.feed}/> )}
           </ Paper>
     );
   }

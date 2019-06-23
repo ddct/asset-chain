@@ -78,8 +78,6 @@ class App extends Component {
         <div className="Banner-container">
           <Banner />
         </div>
-            <AssetsController switchFeedHandler={this.switchFeedHandler}   socket={this.state.socket}/>
-
         <div className="Main-container">
           <Main socket={this.state.socket} switchFeedHandler={this.switchFeedHandler} connected={this.state.connected} owner={this.state.owner} updateOwner={this.updateOwner}/>
         </div>
@@ -88,13 +86,16 @@ class App extends Component {
             <FeedController showFeed={this.state.showFeed} switchFeedHandler={this.switchFeedHandler} socket={this.state.socket}/>
           </ Paper>
         </div>
+        <AssetsController switchFeedHandler={this.switchFeedHandler}   socket={this.state.socket}/>
         <div className="Blocks-container">  
             <Blocks blocks={this.state.blocks}/>
         </div>
+        
         <div className="Connected-button">
           <Connected connected={this.state.connected} socketID={this.state.socket.id}/>
         </div>
       </div>
+      
     );
   }
 }
