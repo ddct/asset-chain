@@ -21,7 +21,7 @@ function ContainedButtons(props) {
 
   return (
     <div>
-      <Button variant="contained" color="secondary" disabled={!props.connected} className={classes.button} onClick={onClickHandler}>
+      <Button variant="contained" style={{backgroundColor: props.connected ? 'lightgreen':'red'} } disabled={!props.connected} className={classes.button} onClick={onClickHandler}>
         {props.connected ? "Connected" : "Disconnected"}
       </Button>
     </div>

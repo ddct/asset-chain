@@ -7,6 +7,7 @@ import FeedController from './Containers/FeedController';
 import Blocks from './Components/Blocks';
 import Banner from './Containers/Banner';
 import socketIOClient from 'socket.io-client'
+import AssetsController from './Containers/Assets';
 
 class App extends Component {
 
@@ -17,7 +18,7 @@ class App extends Component {
       connected: false,
       socket : socketIOClient("40.117.233.118:4001"),
       blocks : [],
-      owner: "thomas",
+      owner: "thomas"
     }  
 
     this.switchFeedHandler = this.switchFeedHandler.bind(this);
@@ -68,7 +69,6 @@ class App extends Component {
       })
       console.log(`New block ${newBlock.number} added`);
     })
-    
   }
 
   render() {
@@ -85,13 +85,16 @@ class App extends Component {
             <FeedController showFeed={this.state.showFeed} switchFeedHandler={this.switchFeedHandler} socket={this.state.socket}/>
           </ Paper>
         </div>
+        <AssetsController switchFeedHandler={this.switchFeedHandler}   socket={this.state.socket}/>
         <div className="Blocks-container">  
             <Blocks blocks={this.state.blocks}/>
         </div>
+        
         <div className="Connected-button">
           <Connected connected={this.state.connected} socketID={this.state.socket.id}/>
         </div>
       </div>
+      
     );
   }
 }

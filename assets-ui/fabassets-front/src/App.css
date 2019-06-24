@@ -15,6 +15,35 @@
   margin-top: 15px;
 }
 
+.Assets-container{
+  height: auto;
+  width: calc(100% - 30px);
+  padding: 20px 0px 12px 10px;
+  margin:10px;
+  background-color: lightgrey;
+  text-align: left;
+}
+
+.Asset{
+  margin-top:10px;
+  margin-right:5px;
+  border: 1px solid #ccc;
+  padding:10px;
+  border-radius:10px;
+  width: calc(33% - 30px);
+  display:inline-block;
+  position:relative;
+}
+
+.AssetText{
+  float:left;
+  margin-left:10px;
+}
+
+.App {
+  background-color: lightgrey;
+}
+
 .Banner-container{
   height: 60px;
   width: calc(100% - 10px);
@@ -87,7 +116,21 @@
   margin-top: 0px;
 }
 
-@media all and (max-width: 700px) {
+.available {
+  /* width:10px; */
+  /* height:10px; */
+  position: absolute;
+  top:5px;
+  right: 5px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  color:white;
+  font-size: 12px;
+  padding:5px;
+}
+
+@media all and (max-width: 1024px) and (min-width: 0px) {
+
   .Main-container{
     box-sizing: border-box;
     height: 380px;
@@ -123,8 +166,6 @@
     font-size:20px;
   }
 
-  
-
   #root > div > div.Main-container > div > div > div > div > div > div > button{
     width:20%;
     padding:0px;
@@ -138,8 +179,6 @@
     font-size:10px;
   }
 
-
-
   #root > div > div.Blocks-container > div > ul > li{
     width: 100% !important;
     overflow:scroll;
@@ -148,6 +187,34 @@
   #root > div > div.Main-container{
     height: auto;
   }
+
+  .Asset{
+    width: calc(100% - 30px);
+  }
+}
+
+@media all and (max-width: 1200px) and (min-width: 1025px) {
+
+  .Asset{
+    width: calc(50% - 30px);
+  }
+
+}
+
+@media all and (max-width: 1600) and (min-width: 1201px) {
+
+  .Asset{
+    width: calc(33% - 30px);
+  }
+
+}
+
+@media all and (max-width: 3000px) and (min-width: 1601px) {
+
+  .Asset{
+    width: calc(25% - 30px);
+  }
+
 }
 
 #root > div > div.Blocks-container > div > ul > li > div > div > div{

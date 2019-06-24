@@ -31,7 +31,7 @@ class FeedController extends Component {
       })
     }else if(data.type === 'INFO'){
       const newFeed = [<Divider key={data.payload}/>, ...this.state.feed]
-      this.props.switchFeedHandler(0);
+      this.props.switchFeedHandler(1);
       this.setState({
         feed : newFeed,
         info: data.payload
@@ -96,7 +96,7 @@ class FeedController extends Component {
     return (
           <Paper classes={{root: "Page-container"}}>
             <FeedNav switchFeedHandler={this.props.switchFeedHandler} value={this.props.showFeed}/>
-            {(this.props.showFeed ? <Info data={this.state.info}/> : <FeedList data={this.state.feed}/> )}
+            {(this.props.showFeed ? <Info data={this.state.feed}/> : <FeedList data={this.state.feed}/> )}
           </ Paper>
     );
   }

@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
-
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -52,14 +51,22 @@ const styles = theme => ({
 });
 
 class CustomizedTabs extends React.Component {
-  state = {
-    value: 0,
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value : 0
+    }
+  }
 
   handleChange = (event, value) => {
-    this.setState({ value });
+    this.setState({ 
+      value: value
+    });
+
     this.props.selectPage({ value });
-  };
+
+  }
 
   render() {
     const { classes } = this.props;
@@ -89,9 +96,9 @@ class CustomizedTabs extends React.Component {
             classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
             label="create"
           />
-                <Tab
-      classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-      label="change user"
+          <Tab
+            classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+            label="change user"
           />
         </Tabs>
       </div>
