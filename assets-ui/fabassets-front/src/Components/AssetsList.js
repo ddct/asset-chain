@@ -32,7 +32,7 @@ function FolderList(props) {
 
       return(
         <div className={classes.root}>
-          <p class="MuiTypography-root-72 MuiTypography-body1-81 MuiTypography-colorTextSecondary-95 Block-title-192">ASSETS</p>
+          <p className="MuiTypography-root-72 MuiTypography-body1-81 MuiTypography-colorTextSecondary-95 Block-title-192">ASSETS</p>
           <div style={{display:'inline-block'}}>
             {
               sorted.map((asset) => {

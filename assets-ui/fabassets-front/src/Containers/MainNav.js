@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Swal from 'sweetalert2'
-import fs from 'fs';
-var request = require('request');
-
-const axios = require('axios');
 
 const styles = theme => ({
   root: {
@@ -71,43 +66,6 @@ class CustomizedTabs extends React.Component {
 
     this.props.selectPage({ value });
 
-    if(value == "3"){
- 
-      Swal.fire({
-        title: 'Select image',
-        input: 'file',
-        inputAttributes: {
-          'accept': 'image/*',
-          'aria-label': 'Upload your profile picture',
-          'name': 'file'
-        },
-        type: "info",
-        showCancelButton: true,
-        confirmButtonColor: "#DD6B55",
-        confirmButtonText: "Submit"
-      }).then((result) => {
-          if (result.value) {
-            const formData = new FormData();
-            formData.append('file', result.value);
-            
-            axios({
-              method: 'post',
-              url: 'http://0.0.0.0:22666/classify',
-              data: formData,
-              config: { headers: {'Content-Type': 'multipart/form-data' }}
-              })
-              .then(function (response) {
-                  //handle success
-                  console.log(response.data.result)
-                  
-              })
-              .catch(function (response) {
-                  //handle error
-                  console.log(response);
-              });
-            }
-        })
-    }
   }
 
   render() {

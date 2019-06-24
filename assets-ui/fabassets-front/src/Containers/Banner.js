@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 
 const styles = theme => ({
   gridList: {
@@ -13,7 +12,7 @@ function Banner() {
 
   return (
 
-      <img id="lego" src="logo.png" height="65px" />
+      <img id="lego" src="logo.png" height="65px" alt="logo" />
 
   );
 }
