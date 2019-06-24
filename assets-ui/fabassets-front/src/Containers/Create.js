@@ -24,7 +24,7 @@ class Create extends React.Component {
     ID: null,
     color: null,
     make: null,
-    model: null,
+    model: this.props.deviceModel,
     owner: null
   };
 

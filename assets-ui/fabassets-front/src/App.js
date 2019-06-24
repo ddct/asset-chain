@@ -18,7 +18,7 @@ class App extends Component {
       connected: false,
       socket : socketIOClient("40.117.233.118:4001"),
       blocks : [],
-      owner: "thomas",
+      owner: "thomas"
     }  
 
     this.switchFeedHandler = this.switchFeedHandler.bind(this);
@@ -69,7 +69,6 @@ class App extends Component {
       })
       console.log(`New block ${newBlock.number} added`);
     })
-    
   }
 
   render() {
