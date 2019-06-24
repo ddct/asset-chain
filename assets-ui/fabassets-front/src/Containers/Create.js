@@ -84,9 +84,15 @@ class Create extends React.Component {
               config: { headers: {'Content-Type': 'multipart/form-data' }}
               })
               .then((response) => 
-                response.data.result === "macbook" ? 
-                this.setState({color: "Grey", make: "Apple", model: "Macbook Pro"}) : 
-                this.setState({color: "Black", make:"Lenovo", model: "Thinkpad"}))
+
+              {
+                console.log(response.data.result);
+                switch(response.data.result) {
+                  case 'macbook': return this.setState({color: "Grey", make: "Apple", model: "Macbook Pro"});
+                  case 'lenovo': return this.setState({color: "Black", make:"Lenovo", model: "Thinkpad"});
+                  case 'vr': return this.setState({color: "Black", make: "Oculus", model: "Quest"});
+                }
+              })
                 
               .catch(function (response) {
                   //handle error
